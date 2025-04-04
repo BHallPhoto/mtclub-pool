@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Pool Tournament Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+
+            <!-- Form for Entry -->
+            <h1 id="pool-registration">Pool Tournament Registration</h1>
+            <form id="form-registration" method="submit" class="registration-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Players Name" autocomplete="off" required>
+                <div class="checkbox-group">
+                    <p>
+                        <input type="checkbox" name="cb" id="cb1">
+                        <label for="cb1" id="cb1-label">Not Paid.</label>
+                    </p>
+                </div>
+                <button type="submit" id="submit-player">Register</button>
+            </form>
+            
+            <!-- Start of Games -->
+            <div class="game-container" id="games">
+                <div class="table-one">
+                    <div class="players-tb1">
+                        <div class="tb1-plyr1">
+                            <input type="radio" name="tb1-winner" class="tb1" id="player-1-tb1"><span class="names-tb1" id="tb1-name1"></span>
+                        </div>
+                        <span class="vs">vs</span>
+                        <div class="tb1-plyr2">
+                            <input type="radio" name="tb1-winner" class="tb1" id="player-2-tb1"><span class="names-tb1" id="tb1-name2"></span>
+                        </div>
+                    </div>
+                    <button type="button" id="tb1-button" class="tb1-winner" disabled>No Winner</button>
+                </div>
+                <div class="table-two">
+                    <div class="players-tb2">
+                        <div class="tb2-plyr1">
+                            <input type="radio" name="tb2-winner" class="tb2" id="player-1-tb2"><span class="names-tb2" id="tb2-name1"></span>
+                        </div>
+                        <span class="vs">vs</span>
+                        <div class="tb2-plyr2">
+                            <input type="radio" name="tb2-winner" class="tb2" id="player-2-tb2"><span class="names-tb2" id="tb2-name2"></span>
+                        </div>
+                    </div>
+                    <button type="button" id="tb2-button" class="tb2-winner" disabled>No Winner</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Button -->
+        <div class="start">
+            <button type="button" id="start">Start Games</button>
+        </div>
+
+        <!-- Buy Name -->
+        <div class="buy-name">
+            <span id="buy-name"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

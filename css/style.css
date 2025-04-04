@@ -1,0 +1,214 @@
+body {
+	font-family: Arial, sans-serif;
+	background: url("bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+.main {
+  	height: 375px;
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	border: 1px solid rgb(255, 255, 255);
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	width: 300px;
+	text-align: center;
+}
+
+.container h1, form {
+  	/* display: none; */
+}
+
+.start {
+	height: 75px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.buy-name {
+	font-family: "Raleway", serif;
+	font-size: 1.5rem;
+	height: 75px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.start button, .buy-name span {
+  	display: none;
+}
+
+h1 {
+	font-family: "Protest Revolution", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	color: #333333;
+}
+
+.registration-form {
+  	width: 300px;
+}
+
+.registration-form label {
+	font-size: 1rem;
+	color: #555555;
+	display: block;
+	text-align: left;
+	margin: 10px 0 5px;
+}
+
+.registration-form input[type="text"] {
+	width: 94%;
+	padding: 8px;
+	margin-bottom: 15px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.checkbox-group input {
+	appearance: none;
+	background-color: white;
+	height: 12px;
+	width:12px;
+	border: 1px solid #555555;
+	margin-right: 10px;
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+.checkbox-group label {
+	position: relative;
+	display: inline-block;
+	line-height: 1.5em;
+	padding: 0 0 0 2em;
+	cursor: pointer;
+}
+.checkbox-group label::before, .checkbox-group label::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 15px;
+	height: 15px;
+}
+.checkbox-group label::before {
+	background-color: rgb(255, 255, 255);
+	content: " ";
+	border: 1px solid rgba(85, 85, 85, 0.5);
+	border-radius: 15%;
+}
+input[type="checkbox"] + label::after {
+	content: "\2714";
+	color: rgb(255, 255, 255);
+	line-height: 1.25;
+	padding-left: 1px;
+	text-align: center;
+}
+input[type="checkbox"]:checked + label::before {
+	background: #007bff;
+	border-color: rgba(85, 85, 85, 0.5);
+}
+input[type="checkbox"] + label::after {
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+}
+input[type="checkbox"]:checked + label::after {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(.85);
+}
+.checkbox-group label::before, .checkbox-group label::after {
+	-webkit-transition: .25s all ease;
+	-o-transition: .25s all ease;
+	transition: .25s all ease;
+}
+/* End of Checkbox Styles */
+
+.game-container {
+	margin-top: 15px;
+	height: 150px;
+	display: none;
+	justify-content: center;
+	justify-content: space-around;
+}
+
+.names-tb1, .names-tb2 {
+	font-family: "Raleway", serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 1.5rem;
+	letter-spacing: .2rem;
+}
+
+.game-container input[type="radio"] {
+  	margin-right: 8px;
+}
+
+.players-tb1, .players-tb2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.tb1-plyr1, .tb1-plyr2, .tb2-plyr1, .tb2-plyr2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.vs {
+	font-size: 1.125rem;
+	padding: 5px 0;
+	font-weight: 600;
+}
+
+.table-one button, .table-two button {
+	background-color: #006da0;
+	color: white;
+	padding: 8px 12px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: 18px;
+}
+
+button {
+	background-color: #006da0;
+	color: white;
+	padding: 10px 15px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button:hover {
+  	background-color: #4d749e;
+}
